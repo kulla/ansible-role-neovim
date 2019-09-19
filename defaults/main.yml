@@ -1,8 +1,8 @@
 # Path to configuration file of neovim
-neovim_config_file: "{{ neovim_config_dir }}/init.vim }}"
+neovim_config_file: "{{ neovim_config_dir }}/init.vim"
 
 # Base directory for configuration files of neovim
-neovim_config_dir: "{{ neovim_user_dir }}/.config/nvim }}"
+neovim_config_dir: "{{ neovim_user_dir }}/.config"
 
 # Configuration for neovim
 neovim_configuration: ~

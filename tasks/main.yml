@@ -3,3 +3,23 @@
   block:
     - name: Install neovim
       package: package=neovim state=present
+
+    - name: Gather facts about user for whom neovim shall be configured
+      getent:
+        database: passwd
+        key: "{{ neovim_user_id }}"
+        split: ~
+
+    - name: Create base directory for configurations of neovim
+      file:
+        path: "{{ neovim_config_dir }}"
+        state: directory
+        mode: 0o700
+        owner: "{{ neovim_user_id }}"
+
+    - name: Configure neovim
+      template:
+        src: init.vim
+        dest: "{{ neovim_config_file }}"
+        mode: 0o600
+        owner: "{{ neovim_user_id }}"

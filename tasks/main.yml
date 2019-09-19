@@ -2,7 +2,9 @@
 - tags: [neovim]
   block:
     - name: Install neovim
-      package: package=neovim state=present
+      package:
+        name: "{{ neovim_packages }}"
+        state: present
 
     - name: Gather facts about user for whom neovim shall be configured
       getent:

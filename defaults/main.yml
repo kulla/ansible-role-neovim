@@ -2,7 +2,7 @@
 neovim_config_file: "{{ neovim_config_dir }}/init.vim"
 
 # Base directory for configuration files of neovim
-neovim_config_dir: "{{ neovim_user_dir }}/.config"
+neovim_config_dir: "{{ neovim_user_dir }}/.config/nvim"
 
 # Configuration for neovim
 neovim_configuration: ~

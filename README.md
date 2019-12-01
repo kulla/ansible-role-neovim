@@ -53,7 +53,7 @@ neovim_configuration: "{{ lookup('file', 'my_neovim_configuration.vim') }}"
 `neovim_plugins`: When this list is not empty, [vim-plug](https://github.com/junegunn/vim-plug) is installed and the necessary configuration for vim-plug is added.
 Each item of this list is either a string and contains the name of the plugin or is an dictionary of the form `{ name: ..., options: ... }` containing the name of the plugin and additional options.
 The options are the same as the [options vim-plug offers](https://github.com/junegunn/vim-plug#plug-options).
-**Note:** Currently only options are supported which does not contain the characters `"` or `'`.
+*Note:* Currently only options are supported which does not contain the characters `"` or `'`.
 
 You can find more variables for a more specialized configuration in [`defaults/main.yml`](defaults/main.yml).
 However, these variables might change in the future since they aren't considered part of the officially supported variables.

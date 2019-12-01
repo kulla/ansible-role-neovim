@@ -1,3 +1,5 @@
+neovim_autoload_dir: "{{ neovim_user_dir }}/.local/share/nvim/site/autoload/"
+
 # Path to configuration file of neovim
 neovim_config_file: "{{ neovim_config_dir }}/init.vim"
 
@@ -18,3 +20,6 @@ neovim_user_id: "{{ ansible_user_id }}"
 
 # Home directory of the user for whom neovim shall be configured
 neovim_user_dir: "{{ getent_passwd[neovim_user_id][4] }}"
+
+# List of neovim plugins
+neovim_plugins: []

@@ -1,7 +1,7 @@
 neovim
 ======
 
-Installs and configures the text editor [neovim](https://neovim.io/).
+Installs and configures the text editor [neovim](https://neovim.io/) using the operating system's package manager. 
 
 Example Playbook
 ----------------

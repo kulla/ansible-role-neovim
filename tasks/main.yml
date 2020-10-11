@@ -19,7 +19,7 @@
         recurse: yes
         mode: 0o700
         owner: "{{ neovim_user_id }}"
-      when: neovim_plugins
+      when: neovim_plugins | bool
 
     - name: Install vim-plug
       get_url:
@@ -27,7 +27,7 @@
         dest: "{{ neovim_autoload_dir }}/plug.vim"
         mode: 0o600
         owner: "{{ neovim_user_id }}"
-      when: neovim_plugins
+      when: neovim_plugins | bool
 
     - name: Create base directory for configurations of neovim
       file:

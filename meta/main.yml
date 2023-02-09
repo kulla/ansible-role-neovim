@@ -10,9 +10,7 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
-        - artful
-        - bionic
-        - comsmic
+        - jammy
     - name: Debian
       versions:
         - stretch

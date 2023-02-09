@@ -13,7 +13,7 @@ neovim_configuration: ~
 # Packages which shall be installed
 neovim_packages:
   - neovim
-  - python3-neovim
+  - python3-pynvim
 
 # List of neovim plugins
 neovim_plugins: []

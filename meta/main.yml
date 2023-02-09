@@ -11,9 +11,6 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - jammy
-    - name: Debian
-      versions:
-        - stretch
 
   galaxy_tags:
     - neovim
